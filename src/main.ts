@@ -47,7 +47,7 @@ async function run() {
             core.info(`Uploading ${percent}%: ${file}`)
           } else if (percent === 100) {
             core.info(`Uploaded: ${file}`)
-            files.push(file)
+            uploadedFiles.push(file)
           }
         },
         partSizeBytes: partSizeBytes,
